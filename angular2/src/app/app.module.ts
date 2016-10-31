@@ -15,7 +15,7 @@ import { CustomEventComponent } from './custom-event/custom-event.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { ViniDirective } from './vini.directive';
 import { ServiceComponent1Component } from './service-component1/service-component1.component';
-import { LoggingService } from "./mail.service"
+import { LoggingService } from "./logging.service"
 
 @NgModule({
   declarations: [

@@ -9,11 +9,11 @@ import {LoggingService} from "../logging.service";
 export class ServiceComponent1Component implements OnInit {
 
   constructor(
-      @Inject('loged') private loged
+    private logged: LoggingService
   ) { }
 
   logIt(){
-    this.loged.log();
+    this.logged.log();
   }
 
 

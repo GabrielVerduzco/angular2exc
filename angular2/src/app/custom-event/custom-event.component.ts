@@ -13,7 +13,7 @@ import { Component, OnInit, Output,  EventEmitter } from '@angular/core';
 })
 export class CustomEventComponent implements OnInit {
 
-  @Output() save: EventEmitter = new EventEmitter();
+  @Output() save = new EventEmitter();
   constructor() { }
 
   ngOnInit() {

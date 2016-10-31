@@ -1,6 +1,5 @@
 import {Component, Inject} from '@angular/core';
 import {MailService} from "./mail.service";
-import {inject} from "@angular/core/testing";
 
 @Component({
   selector: 'app-root', //this is the selector 'instroction'
@@ -41,13 +40,12 @@ export class AppComponent {
     console.log(contact);
   }
   constructor(
-      @Inject('mail') private mail
-
-
-
-
-
-  ) {}
+      private mail: MailService
+  ) {
+      let messages = this.mail.messages;
+      console.log(messages);
+      
+  }
 
 
 }
