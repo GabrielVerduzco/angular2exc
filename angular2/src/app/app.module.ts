@@ -15,7 +15,8 @@ import { CustomEventComponent } from './custom-event/custom-event.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { ViniDirective } from './vini.directive';
 import { ServiceComponent1Component } from './service-component1/service-component1.component';
-import { LoggingService } from "./logging.service"
+import { LoggingService } from "./logging.service";
+import { LoginImagenComponent } from './login-imagen/login-imagen.component'
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { LoggingService } from "./logging.service"
     CustomEventComponent,
     DirectiveComponent,
     ViniDirective,
-    ServiceComponent1Component
+    ServiceComponent1Component,
+    LoginImagenComponent
   ],
   imports: [
     BrowserModule,

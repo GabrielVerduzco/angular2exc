@@ -31,10 +31,17 @@ import {MailService} from "./mail.service";
     <app-directive></app-directive>
     <hr>
     <app-service-component1></app-service-component1>
+    <app-login-imagen></app-login-imagen>
   `,
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  ulrEscudo:string;
+  constructor() {
+    this.ulrEscudo= "../assets/img/escudoCol.png";
+  }
+
 
   saveContact(contact){
     console.log(contact);
