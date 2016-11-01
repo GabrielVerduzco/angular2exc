@@ -31,19 +31,14 @@ import {MailService} from "./mail.service";
     <app-directive></app-directive>
     <hr>
     <app-service-component1></app-service-component1>
-    <app-login-imagen></app-login-imagen>
+    <app-login-imagen [urlEscudo]="urlEscudo"></app-login-imagen>
   `,
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+    urlEscudo: string = '/assets/img/escudoCol.png';
 
-  ulrEscudo:string;
-  constructor() {
-    this.ulrEscudo= "../assets/img/escudoCol.png";
-  }
-
-
-  saveContact(contact){
+  saveContact(contact) {
     console.log(contact);
   }
   constructor(
@@ -51,7 +46,6 @@ export class AppComponent {
   ) {
       let messages = this.mail.messages;
       console.log(messages);
-      
   }
 
 

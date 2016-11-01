@@ -10,13 +10,11 @@ export class LoginImagenComponent implements OnInit {
 
   @Input() urlEscudo: string;
 
-
   constructor() { }
 
-  testeo(name){
-    console.log(name);
+  testeo() {
+    console.log(this.urlEscudo);
   }
-  constructor() { }
 
   ngOnInit() {
   }
